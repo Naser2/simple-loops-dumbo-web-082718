@@ -38,19 +38,15 @@ times_iterator(7)
 
 
 # With Global Counter 
-def while_iterator(num)
-  
-  while $counter <= num
-      puts $phrase
-      if  $counter == num 
-     break
-       $counter += 1
-   end
-  end 
-  
+def while_iterator(number)
+  num = 1
+  while num <= 7
+  puts $phrase
+  break if num == 7
+  num += 1
+  end
 end
 while_iterator(7)
-
 
 puts "#________ UNTIL  ______________________#"
 
